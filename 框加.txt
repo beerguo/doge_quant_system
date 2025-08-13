@@ -1,0 +1,41 @@
+doge_quant_system/
+├── config/
+│   ├── __init__.py
+│   ├── settings.py                 # 全局配置
+│   └── strategy_config.py          # 策略配置管理
+├── core/
+│   ├── __init__.py
+│   ├── config_manager.py           # 配置管理
+│   ├── risk_manager.py             # 风险管理
+│   ├── signal_combiner.py          # 信号整合
+│   └── system_runner.py            # 系统运行器
+├── data/
+│   ├── __init__.py
+│   ├── market_data.py              # 市场数据获取
+│   └── twitter_data.py             # Twitter数据获取
+├── strategies/
+│   ├── __init__.py
+│   ├── bollinger_strategy.py       # 布林带策略
+│   ├── breakout_strategy.py        # 突破策略
+│   ├── multi_timeframe_strategy.py # 多时间框架策略
+│   └── twitter_strategy.py         # Twitter情绪策略
+├── backtesting/
+│   ├── __init__.py
+│   └── backtester.py               # 回测系统
+├── execution/
+│   ├── __init__.py
+│   └── order_executor.py           # 订单执行
+├── ui/
+│   ├── __init__.py
+│   ├── streamlit_ui.py             # Streamlit主界面
+│   └── components/
+│       ├── __init__.py
+│       ├── strategy_config.py      # 策略配置组件
+│       ├── risk_management.py      # 风险管理组件
+│       ├── twitter_monitor.py      # Twitter监控组件
+│       └── backtest_panel.py       # 回测面板组件
+├── requirements.txt                # 依赖列表
+├── .env.example                    # 环境变量示例
+├── start.sh                        # 启动脚本
+├── setup_systemd.sh                # systemd服务设置脚本
+└── README.md                       # 项目说明
