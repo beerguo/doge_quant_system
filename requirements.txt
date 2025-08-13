@@ -1,0 +1,16 @@
+# 系统核心依赖
+requests==2.31.0
+numpy==1.24.3
+pandas==2.0.2
+matplotlib==3.7.1
+nltk==3.8.1
+python-dotenv==1.0.0
+
+# Web界面依赖
+streamlit==1.23.1
+plotly==5.15.0
+altair==5.0.1
+vega_datasets==0.9.0
+
+# 系统监控
+psutil==5.9.5
